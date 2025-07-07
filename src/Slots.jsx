@@ -7,8 +7,6 @@ export default function Slots({ val1, val2, val3 }) {
             <h3 style={styles}>{result}</h3>
             <h3>{result === "You Win" ? "Congrats!!!" : null}</h3>
 
-
-
         </>
     )
 

@@ -4,13 +4,28 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import DoubleDice from './DoubleDice'
 import Slots from './Slots'
+import ShoppingList from './ShoppingList'
+
+
+const data = [
+  { id: 1, item: 'eggs', quantity: 12, completed: false },
+  { id: 2, item: 'milk', quantity: 2, completed: true },
+  { id: 3, item: 'chicken breast', quantity: 3, completed: false },
+  { id: 4, item: 'carrots', quantity: 6, completed: true }
+]
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Slots val1="🍒" val2="🍌" val3="🍒" />
-      <Slots val1="🍒" val2="🍒" val3="🍒" />
+
+      <ShoppingList items={data} />
+
+
+
+
+      {/* <Slots val1="🍒" val2="🍌" val3="🍒" />
+      <Slots val1="🍒" val2="🍒" val3="🍒" /> */}
 
 
       {/* <div>
