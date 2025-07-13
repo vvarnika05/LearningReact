@@ -18,7 +18,6 @@ export default function Counter() {
             <button onClick={increment}>+1</button>
             <p>Name: {name}</p>
             <input value={name} onChange={handleChange} type="text" />
-            <p>yo</p>
         </div>
 
     )
